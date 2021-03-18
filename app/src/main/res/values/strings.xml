@@ -5,8 +5,16 @@
     <string name="ranking">ranking</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="search">search</string>
+
     <string name="the_image_recommendation">the_image_recommendation</string>
     <string name="image_main">image_main</string>
     <string name="search">search</string>
+
+    <string name="adress1">adress1</string>
+    <string name="adress2">adress2</string>
+    <string name="imageplace1">imageplace1</string>
+    <string name="imageplace2">imageplace2</string>
+    <string name="des2">des2</string>
+    <string name="des1">des1</string>
+    <string name="name1">name1</string>
 </resources>

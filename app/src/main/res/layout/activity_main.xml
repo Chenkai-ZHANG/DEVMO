@@ -7,6 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/des2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageplace2"
+        app:layout_constraintTop_toBottomOf="@+id/description1" />
+
+    <ImageView
+        android:id="@+id/imageplace2"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/imageplace2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageplace1"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+    <TextView
+        android:id="@+id/description2"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/des2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageplace2"
+        app:layout_constraintTop_toBottomOf="@+id/adress2" />
+
+    <TextView
+        android:id="@+id/adress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/adress2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageplace2"
+        app:layout_constraintTop_toBottomOf="@+id/name2" />
+
     <EditText
         android:id="@+id/search_bar"
         android:layout_width="0dp"
@@ -47,11 +93,12 @@
         app:srcCompat="@android:drawable/ic_menu_report_image" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageplace1"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:contentDescription="@string/imageplace1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_recommend"
         app:srcCompat="@android:drawable/ic_menu_report_image" />
@@ -61,18 +108,34 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="name"
+        android:layout_marginTop="32dp"
+        android:text="@string/name1"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageplace1"
         app:layout_constraintTop_toBottomOf="@+id/image_recommend" />
 
     <TextView
         android:id="@+id/adress1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="adress1"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="377dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/adress1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageplace1"
+        app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+    <TextView
+        android:id="@+id/description1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/des1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageplace1"
+        app:layout_constraintTop_toBottomOf="@+id/adress1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
