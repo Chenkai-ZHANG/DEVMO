@@ -28,24 +28,41 @@ public class SecondActivity extends AppCompatActivity {
                 String loc="Château des ducs de Bretagne";
 
                 // Parse the location and create the intent.
-                Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
+                //Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
+                Uri addressUri = Uri.parse("geo:37.422219,-122.08364?z=14");
                 Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
 
                 // Find an activity to handle the intent, and start that activity.
                 if (intent.resolveActivity(getPackageManager())!= null){
-                    SecondActivity.this.startActivity(intent);
+                    startActivity(intent);
                 } else {
                     Log.d("ImplicitIntents", "Can't handle this intent!");
                 }
 
             }
         });
-    }
 
+        final TextView myText1= (TextView) findViewById(R.id.adress_cha);
+        myText1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get the string indicating a location. Input is not validated; it is
+                // passed to the location handler intact.
+                String loc="Château des ducs de Bretagne";
 
+                // Parse the location and create the intent.
+                Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
+                Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
 
-    public void openLocation(View view) {
+                // Find an activity to handle the intent, and start that activity.
+                if (intent.resolveActivity(getPackageManager())!= null){
+                    startActivity(intent);
+                } else {
+                    Log.d("ImplicitIntents", "Can't handle this intent!");
+                }
 
+            }
+        });
     }
 
 

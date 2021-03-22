@@ -99,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-
+        android:clickable="true"
         android:layout_marginTop="8dp"
         android:text="@string/adress1"
         android:textSize="18sp"
