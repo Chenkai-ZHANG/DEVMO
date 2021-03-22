@@ -28,8 +28,7 @@ public class SecondActivity extends AppCompatActivity {
                 String loc="Château des ducs de Bretagne";
 
                 // Parse the location and create the intent.
-                //Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
-                Uri addressUri = Uri.parse("geo:37.422219,-122.08364?z=14");
+                Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
                 Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
 
                 // Find an activity to handle the intent, and start that activity.
