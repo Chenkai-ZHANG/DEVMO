@@ -50,20 +50,18 @@
         android:id="@+id/frameLayout"
         android:layout_width="384dp"
         android:layout_height="131dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/cadre"
-        app:layout_constraintBottom_toTopOf="@+id/name2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_recommend">
 
         <ImageView
             android:id="@+id/imagelove1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="41dp"
             android:layout_marginStart="300dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="67dp"
@@ -90,11 +88,11 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/name1"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/imageplace1"
-        app:layout_constraintTop_toBottomOf="@+id/image_recommend" />
+        app:layout_constraintTop_toTopOf="@+id/frameLayout" />
 
     <TextView
         android:id="@+id/adress1"
@@ -121,11 +119,12 @@
         app:layout_constraintTop_toBottomOf="@+id/adress1" />
 
     <FrameLayout
+        android:id="@+id/frameLayout2"
         android:layout_width="381dp"
         android:layout_height="129dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="7dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="88dp"
         android:background="@drawable/cadre"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -135,8 +134,8 @@
 
         <ImageView
             android:id="@+id/imagelove2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="42dp"
+            android:layout_height="38dp"
             android:layout_marginStart="300dp"
             android:layout_marginEnd="17dp"
             android:layout_marginBottom="65dp"
@@ -152,11 +151,11 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/des2"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/imageplace2"
-        app:layout_constraintTop_toBottomOf="@+id/description1" />
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
 
     <ImageView
         android:id="@+id/imageplace2"
