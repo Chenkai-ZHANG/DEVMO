@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(new Intent(MainActivity.this, ThirdActivity.class));
             }
         });
+
         final ImageView myimageview1 = (ImageView) findViewById(R.id.imageplace2);
         myimageview1.setOnClickListener(new View.OnClickListener() {
             @Override
